@@ -19,11 +19,14 @@ Random forest regressor for heart rate predictions.
 #### The Dataset:
 *PAMAP2* dataset that contains data tracked by a heart monitor and 3 IMU sensors for 9 different subjects while performing various tasks. For information about the subjects, please click here. For information about the experiment and tasks performed, please click here.
 
+
+
 ## Figures and discussions
 
 For an extensive report and EDA, please check older versions of the code. [Version 1](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/IMU_sensor_analysis_code.ipynb), [Version 2](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/IMU_new_2.ipynb)
 
 The following discussion is from the latest version with an improved prediction model and error visualisations. The code can be found [here](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/IMU4.ipynb).
+
 
 ### Some stats from the dataset
 
@@ -35,7 +38,7 @@ We start off with a sorted (by median) boxplot of the heart rate values versus a
 
 Intuitively, the first figure shows positive correlation between heart rate and activity MET. An activity requiring higher consumption of energy results in higher heart rates. But the same cannot be said for the other figure. There is no visible correlation between heart rates and physical attributes such as height, weight or age. We can visualise these claims from heatmaps as well.
 
-![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/corr_imu_hr.png) ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/corr_pa_hr.png)
+![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/clubbed_heatmaps.jpg)
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/corr_imu_pa.png)
 
 **Fig 2: Correlation between features**
@@ -52,9 +55,10 @@ The above plots demonstrate that the time durations and heart rates are not unif
 
 The reason why the heart rate time evolution seems possible is due to the fact that there appears to be distinct trend in heart rate associating with some of the activities.
 
-![]
+![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/clubbed_trends.png)
 
 **Fig 4: Trends in heart rate time evolution across different subjects for different activities.**
+
 
 ### Predictions
 
@@ -69,4 +73,5 @@ A new attribute has been added to the dataset that denotes the heart rate carrie
 
 **Fig 5: Some of the predictions by the model.**
 
-![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/new_imgs/pie.png)
+
+## Conclusion
