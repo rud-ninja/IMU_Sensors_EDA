@@ -31,14 +31,14 @@ We start off with a sorted (by median) boxplot of the heart rate values versus a
 
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/boxplots_hr.png)
 
-**Fig 1: (Left) Activity vs Heart rate. The values above the median line on each boxplot refers to the MET values of the respective activities. The MET value is an indication of physical energy consumption and therefore has no fixed upper limit. (Right) Subject versus heart rate. The values above the median line are ages and the values below the median line denote the BMI of each subject. BMI = weight/height^2.
+**Fig 1: (Left) Activity vs Heart rate. The values above the median line on each boxplot refers to the MET values of the respective activities. The MET value is an indication of physical energy consumption and therefore has no fixed upper limit. (Right) Subject versus heart rate. The values above the median line are ages and the values below the median line denote the BMI of each subject. BMI = weight/height^2.**
 
 Intuitively, the first figure shows positive correlation between heart rate and activity MET. An activity requiring higher consumption of energy results in higher heart rates. But the same cannot be said for the other figure. There is no visible correlation between heart rates and physical attributes such as height, weight or age. We can visualise these claims from heatmaps as well.
 
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/corr_imu_hr.png) ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/corr_pa_hr.png)
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/corr_imu_pa.png)
 
-**Fig 2: Correlation between features
+**Fig 2: Correlation between features**
 
 
 ### Normalising sensor data
@@ -46,7 +46,7 @@ Intuitively, the first figure shows positive correlation between heart rate and 
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/new_imgs/hr%20vs%20time%20per%20age.png)
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/new_imgs/hr%20vs%20time%20per%20bmi.png)
 
-**Fig 3: Stratified plots of the time evolutions of heart rate over the whole length of the track. The gaps in between time evolutions denote transient phases of rest and a change in activity.
+**Fig 3: Stratified plots of the time evolutions of heart rate over the whole length of the track. The gaps in between time evolutions denote transient phases of rest and a change in activity.**
 
 The above plots demonstrate that the time durations and heart rates are not uniform for all activities across all the subjects. For better training, it is advantageous to scale the features appropriately. In this task, the timestamps for each combination of subject and activity have been scaled down to a fraction of the whole duration so essentially between 0 and 1. The same has been done for heat rates which have been scaled to a fraction of their respective heart rate spectrum.
 
@@ -54,7 +54,7 @@ The reason why the heart rate time evolution seems possible is due to the fact t
 
 ![]
 
-**Fig 4: Trends in heart rate time evolution across different subjects for different activities.
+**Fig 4: Trends in heart rate time evolution across different subjects for different activities.**
 
 ### Predictions
 
@@ -67,6 +67,6 @@ A new attribute has been added to the dataset that denotes the heart rate carrie
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/rope_jumping_prediction.png)
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/running_prediction.png)
 
-**Fig 5: Some of the predictions by the model.
+**Fig 5: Some of the predictions by the model.**
 
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/new_imgs/pie.png)
