@@ -67,8 +67,11 @@ The choice of activity clearly influences both the inputs and the outputs. For e
 A new attribute has been added to the dataset that denotes the heart rate carried forward from the previous activity performed by a subject which sets the base for the evolution of the heart rate for the next activity. If starting from rest, the value can easily be set to the resting heart rate. This helps to limit the predictions and minimise errors. Features have been chosen based on correlation values and an absolute threshold value of 0.2 has been considered.
 
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/cycling_prediction.png)
+
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/lying_prediction.png)
+
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/rope_jumping_prediction.png)
+
 ![](https://github.com/rud-ninja/IMU_Sensors_EDA/blob/main/imgs/running_prediction.png)
 
 **Fig 5: Some of the predictions by the model.**
