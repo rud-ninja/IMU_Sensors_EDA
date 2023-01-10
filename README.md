@@ -1,9 +1,10 @@
 # Title: Predicting heart rate time-evolution for a given task from IMU Sensor data 
 
 ### Objectives:
-1. Preprocess the data.
-2. Plot relevant features to visualise their relationships.
-4. Create a prediction model for time evolution of heart rates for specific tasks.
+1. Preprocessed the data.
+2. Scaled down heart rate and time between 0 and 1 for each combination of subject and activity
+3. Represented some of the features on boxplots and graphs to visualise their relationships.
+4. Created a prediction model for time evolution of heart rates for specific tasks.
 
 #### Language used:
 Python
